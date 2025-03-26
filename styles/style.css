@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --font-family : "Work Sans", sans-serif;
+  --primary-font : "Manrope", sans-serif;
+  --secondary-font : "Albert Sans", sans-serif;
+  --title-font-weight : 700;
+  --sub-title-font-weight : 400;
+  --sami-bold-weight : 600;
+  --bold-weight : 900;
+  --some-font-size : 1rem;
+  --sub-font-size : 1.25rem;
+  --text-margin : 1.5rem;
+  --media-font-size : 2rem;
+  --maintitle-font-size : 3.25rem;
+  --similar-color : rgba(95, 61, 198, 1);
+  --some-text-color : rgba(105, 105, 112, 1);
+  --text-color : rgba(255, 255, 252, 1);
+  --primary-color : rgba(79, 77, 82, 1);
+  --title-text-color : rgba(19, 19, 18, 1);
+  --footer-background : #4E27B1;
+  --gradiant-color : linear-gradient(rgba(133, 17, 198, 1), rgba(69, 42, 173, 1));
+}
+/* full website size */
+#full-website-section{
+  max-width: 1440px;
+  width: 86%;
+  margin: auto;
+}
+/* title styles */
+.title{
+  font-family: var(--font-family);
+  font-weight: var(--title-font-weight);
+  font-size: var(--maintitle-font-size);
+}
+.sub-title{
+  font-family: var(--primary-font);
+  font-size: var(--sub-font-size);
+  font-weight: var(--sub-title-font-weight);
+}
+/* footer section */
+.footer-section{
+  background-color: var(--footer-background);
+  padding: 80px 100px;
+  color: var(--text-color);
+}
+.footer-title{
+  display: flex;
+  gap : 100px;
+  margin-bottom: var(--maintitle-font-size);
+}
+
+.footer-nav{
+  display: flex;
+  gap: 60px;
+}
+.main-title{
+  font-size: var(--sub-font-size);
+  color: var(--text-color);
+  font-weight: var(--bold-weight);
+}
+.footer-list li{
+  padding-bottom: 8px;
+  font-size: var(--some-font-size);
+  font-weight: var(--sub-title-font-weight);
+}
+hr{
+  border: 1px solid var(--primary-color);
+}
+/* padding in website */
+.section-padding{
+  margin-top: 120px;
+}
+/* responsive design */
+@media only screen and (max-width: 576px){
+  #full-website-section{
+    width: 100%;
+  }
+  .footer-section{
+    padding: 20px;
+  }
+  .title{
+    font-size: var(--media-font-size);
+  }
+  .footer-title ,
+  .footer-nav{
+    flex-direction: column;
+    gap : var(--text-margin)
+  }
+}
+/* midium devices responsiveness */
+@media only screen and (min-width: 577) and (max-width: 1024px){
+  #full-website-section{
+    width: 100%;
+  }
+  .footer-section{
+    padding: 50px;
+  }
+  .title{
+    font-size: var(--media-font-size);
+  }
+  .footer-title ,
+  .footer-nav{
+    flex-direction: column;
+    gap : var(--text-margin)
+  }
+}
