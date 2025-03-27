@@ -101,6 +101,10 @@ font-size: var(--some-font-size);
   font-weight: var(--sub-title-font-weight);
   color: var(--primary-color);
 }
+/* all-padding */
+/* .all-padding{
+  padding: auto 100px;
+} */
 /* slider or carosaul section */
 .slider{
   background: var(--gradiant-color);
@@ -117,11 +121,29 @@ font-size: var(--some-font-size);
   justify-content: center;
   align-items: center;
 }
+/* Read Our Latest Blog section styles */
+.blog-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-text{
+  font-family: var(--primary-font);
+  color: var(--title-text-color);
+  font-size: var(--text-margin);
+  font-weight: var(--sami-bold-weight);
+}
+.blog-card{
+  border: 2px solid var(--some-text-color);
+  background-color: ghostwhite;
+  border-radius: var(--sub-font-size);
+  padding: var(--text-margin);
+}
 /* footer section */
 .footer-section {
   background-color: var(--footer-bg-color);
-  padding: 80px 100px;
   color: var(--text-color);
+  padding: 80px 100px;
 }
 .footer-title{
   display: flex;
@@ -162,7 +184,8 @@ hr{
   .footer-section ,
   .choose-planning-section ,
   .slider-title ,
-  .slider{
+  .slider,
+  .blog-card-section{
     padding: 20px;
   }
   .title{
@@ -171,7 +194,8 @@ hr{
   .footer-title ,
   .footer-nav ,
   .choose-planning-section ,
-  .card-item{
+  .card-item ,
+  .blog-section{
     flex-direction: column;
     gap : var(--text-margin)
   }
@@ -187,7 +211,8 @@ hr{
   .footer-section ,
   .choose-planning-section ,
   .slider-title ,
-  .slider{
+  .slider,
+  .blog-card-section{
     padding: 50px;
   }
   .title{
@@ -196,7 +221,8 @@ hr{
   .footer-title ,
   .footer-nav ,
   .choose-planning-section ,
-  .card-item{
+  .card-item,
+  .blog-section{
     flex-direction: column;
     gap : var(--text-margin)
   }
