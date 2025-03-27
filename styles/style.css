@@ -33,6 +33,24 @@
   width: 86%;
   margin: auto;
 }
+/* Broadband and Internet Service Providers section styles */
+.service-sections{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--maintitle-font-size);
+}
+.service-title{
+  border-left: 3px solid var(--footer-bg-color);
+}
+.service-card{
+  background: var(--gradiant-color);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--text-margin);
+  border-radius: var(--some-font-size);
+  margin-top: var(--media-font-size);
+}
 /*  Find out what plan is right for you section styles */
 .choose-planning-section{
   display: flex;
@@ -185,8 +203,10 @@ hr{
   .choose-planning-section ,
   .slider-title ,
   .slider,
-  .blog-card-section{
-    padding: 20px;
+  .blog-card-section,
+  .service-card,
+  .service-sections{
+    padding: var(--sub-font-size);
   }
   .title{
     font-size: var(--media-font-size);
@@ -195,7 +215,9 @@ hr{
   .footer-nav ,
   .choose-planning-section ,
   .card-item ,
-  .blog-section{
+  .blog-section ,
+  .service-card,
+  .service-sections{
     flex-direction: column;
     gap : var(--text-margin)
   }
@@ -212,7 +234,8 @@ hr{
   .choose-planning-section ,
   .slider-title ,
   .slider,
-  .blog-card-section{
+  .blog-card-section,
+  .service-sections{
     padding: 50px;
   }
   .title{
@@ -222,7 +245,8 @@ hr{
   .footer-nav ,
   .choose-planning-section ,
   .card-item,
-  .blog-section{
+  .blog-section ,
+  .service-sections{
     flex-direction: column;
     gap : var(--text-margin)
   }
